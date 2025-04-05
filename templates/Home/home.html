@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="flex flex-col items-center justify-center text-center py-20 bg-gray-100">
+    <!-- Hero Section -->
+    <div class="max-w-4xl">
+        <h1 class="text-5xl font-bold text-gray-900">Welcome to GDLC</h1>
+        <p class="mt-4 text-lg text-gray-600">Your trusted platform for managing students, teachers, and educational resources.</p>
+        <a href="{% url 'dashboard' %}" class="mt-6 inline-block px-6 py-3 text-white bg-blue-600 rounded-lg hover:bg-blue-700">
+            Go to Dashboard
+        </a>
+    </div>
+</div>
+
+<!-- Features Section -->
+<div class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto text-center">
+        <h2 class="text-3xl font-semibold text-gray-900">Our Features</h2>
+        <p class="mt-2 text-gray-600">Explore what our platform has to offer.</p>
+    </div>
+
+    <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <!-- Feature 1 -->
+        <div class="p-6 bg-gray-50 rounded-lg shadow">
+            <span class="text-3xl">📚</span>
+            <h3 class="mt-4 text-xl font-semibold">Manage Students</h3>
+            <p class="mt-2 text-gray-600">Easily organize and monitor student information.</p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="p-6 bg-gray-50 rounded-lg shadow">
+            <span class="text-3xl">👩‍🏫</span>
+            <h3 class="mt-4 text-xl font-semibold">Manage Teachers</h3>
+            <p class="mt-2 text-gray-600">Efficiently handle teacher profiles and assignments.</p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="p-6 bg-gray-50 rounded-lg shadow">
+            <span class="text-3xl">⚙️</span>
+            <h3 class="mt-4 text-xl font-semibold">System Settings</h3>
+            <p class="mt-2 text-gray-600">Customize your platform to suit your needs.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Call to Action -->
+<div class="py-20 bg-blue-900 text-white text-center">
+    <h2 class="text-3xl font-semibold">Get Started with GDLC Today</h2>
+    <p class="mt-2">Join thousands of educators and institutions using our system.</p>
+    <a href="{% url 'dashboard' %}" class="mt-6 inline-block px-6 py-3 bg-white text-blue-900 rounded-lg hover:bg-gray-200">
+        Get Started
+    </a>
+</div>
+{% endblock %}
