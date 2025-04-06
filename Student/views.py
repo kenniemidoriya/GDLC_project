@@ -10,7 +10,11 @@ def student_list(request):
 def dashboard(request):
     return render(request, 'Students/student-dashboard.html')
 
+def add_student(request):
+    return render(request, 'Students/add-student.html')
+
 def settings(request):
     return render(request, 'Student/settings.html')
+
 def student_profile(request):
     return render(request, 'Student/student_profile.html')
